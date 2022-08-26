@@ -1,13 +1,18 @@
 export interface IProduct{
     id: number;
     name: string;
-    price: number;
-    image: string;
-    inStock: boolean;
     brand: string;
-}
+    image: string;
+    price: number;
+    inStock: boolean;
+  }
 
-
-export interface ICart{
+  export interface ICart{
     cart: IProduct[]
-}
+  }
+
+  export interface ICartState{
+    cart: {
+      cart: IProduct[]
+    }
+  }
